@@ -1,5 +1,4 @@
 import { makeAutoObservable } from "mobx";
-import { loremIpsum } from "../consts/consts";
 
 export class CvStore {
     constructor() {
@@ -58,18 +57,48 @@ export class CvStore {
             }
         ];
         this._softSkills = [
-            { 'skill': 'sociable' },
-            { 'skill': 'hardworking' },
-            { 'skill': 'friendly' },
-            { 'skill': 'enthusiastic' },
+            {
+                "id": "0",
+                'skill': 'sociable'
+            },
+            {
+                "id": "1",
+                'skill': 'hardworking'
+            },
+            {
+                "id": "2",
+                'skill': 'friendly'
+            },
+            {
+                "id": "3",
+                'skill': 'enthusiastic'
+            },
         ];
         this._hardSkills = [
-            { 'skill': 'HTML' },
-            { 'skill': 'CSS' },
-            { 'skill': 'JavaScript' },
-            { 'skill': 'ReactJs' },
-            { 'skill': 'NodeJs( Express,Sequilize)' },
-            { 'skill': 'PostgreSQL' }
+            {
+                "id": "0",
+                'skill': 'HTML'
+            },
+            {
+                "id": "1",
+                'skill': 'CSS'
+            },
+            {
+                "id": "2",
+                'skill': 'JavaScript'
+            },
+            {
+                "id": "3",
+                'skill': 'ReactJs'
+            },
+            {
+                "id": "4",
+                'skill': 'NodeJs( Express,Sequilize)'
+            },
+            {
+                "id": "5",
+                'skill': 'PostgreSQL'
+            }
         ];
         makeAutoObservable(this);
     }

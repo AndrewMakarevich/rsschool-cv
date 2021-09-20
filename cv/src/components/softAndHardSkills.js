@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { Context } from "../index";
-import { smoothAppearence, smoothDisappearence } from "./smoothAn";
+import { smoothAppearence } from "./smoothAn";
 import './softAndHardSkills.css';
 
 const SoftAndHardSkills = ({ page }) => {
@@ -21,7 +21,7 @@ const SoftAndHardSkills = ({ page }) => {
                         {
                             cv.hardSkills.map(s => {
                                 return (
-                                    <li className='hardSkills__skill skillItem'>{s.skill}</li>
+                                    <li key={s.id} className='hardSkills__skill skillItem'>{s.skill}</li>
                                 )
                             })
                         }
@@ -31,7 +31,7 @@ const SoftAndHardSkills = ({ page }) => {
                         {
                             cv.softSkills.map(s => {
                                 return (
-                                    <li className='softSkills__skill skillItem'>{s.skill}</li>
+                                    <li key={s.id} className='softSkills__skill skillItem'>{s.skill}</li>
                                 )
                             })
                         }

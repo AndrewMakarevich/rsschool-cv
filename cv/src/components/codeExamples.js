@@ -15,14 +15,14 @@ const CodeExamples = () => {
                 {
                     code.codeInfo.map(code => {
                         return (
-                            <article className="codeExample-list__item">
+                            <article key={code.id} className="codeExample-list__item">
                                 <h2 className="codeExample-list__item__header">{code.title}</h2>
                                 <div className="codeExample-list__item__description">{code.description}</div>
                                 <Highlight  {...defaultProps} theme={theme} code={code.example} language="jsx">
                                     {({ className, style, tokens, getLineProps, getTokenProps }) => (
                                         <pre className="codeExample-list__item__example" style={style}>
                                             {tokens.map((line, i) => (
-                                                <div {...getLineProps({ line, i })}>
+                                                <div key={i} {...getLineProps({ line, i })}>
                                                     {line.map((token, key) => (
                                                         <span {...getTokenProps({ token, key })} />
                                                     ))}

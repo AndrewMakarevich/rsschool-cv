@@ -2,7 +2,6 @@
 import { useContext } from 'react';
 import { Context } from '../index';
 import { burgerMenuScript } from './burgerMenuScript.js';
-import { backlightAnchor } from './anchorBacklightScript';
 import './navBar.css';
 
 const NavBar = ({ page }) => {

@@ -1,11 +1,12 @@
 import { makeAutoObservable } from "mobx";
 export class CodeExamplesStore {
-    constructor() {
-        this._codeInfo = [
-            {
-                "title": "Code wars | Run-length encoding (6 kyu)",
-                "description": "Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatening all those strings. Your run-length encoding should be minimal, ie. for all i the values si and si+1 should differ.",
-                "example": `
+  constructor() {
+    this._codeInfo = [
+      {
+        "id": "0",
+        "title": "Code wars | Run-length encoding (6 kyu)",
+        "description": "Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatening all those strings. Your run-length encoding should be minimal, ie. for all i the values si and si+1 should differ.",
+        "example": `
     var runLengthEncoding = function(str){
         const lettersArray = str.split('');
         let finalArray = [];
@@ -27,11 +28,12 @@ export class CodeExamplesStore {
             return array = [array.length, array[0]];
             });          
         }`
-            },
-            {
-                "title": "Code wars | Function Cache (5 kyu)",
-                "description": "If you are calculating complex things or execute time-consuming API calls, you sometimes want to cache the results. In this case we want you to create a function wrapper, which takes a function and caches its results depending on the arguments, that were applied to the function.",
-                "example": `
+      },
+      {
+        "id": "1",
+        "title": "Code wars | Function Cache (5 kyu)",
+        "description": "If you are calculating complex things or execute time-consuming API calls, you sometimes want to cache the results. In this case we want you to create a function wrapper, which takes a function and caches its results depending on the arguments, that were applied to the function.",
+        "example": `
                 function cache(func) {
                     let cache = {}; //Кэш функции
                   
@@ -59,14 +61,14 @@ export class CodeExamplesStore {
                     }
                   }
                 `
-            }
-        ];
-        makeAutoObservable(this);
-    }
-    get codeInfo() {
-        return this._codeInfo;
-    }
-    set codeInfo(info) {
-        this._codeInfo = info;
-    }
+      }
+    ];
+    makeAutoObservable(this);
+  }
+  get codeInfo() {
+    return this._codeInfo;
+  }
+  set codeInfo(info) {
+    this._codeInfo = info;
+  }
 }

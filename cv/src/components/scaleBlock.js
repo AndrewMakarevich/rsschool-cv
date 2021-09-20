@@ -6,7 +6,6 @@ export function scaleBlock(className) {
     } else {
         block.style.marginTop = `-${block.clientHeight}px`;
     }
-    console.log(block.clientHeight);
 }
 export function startPos(className) {
     const block = document.querySelector(`.${className}`);
