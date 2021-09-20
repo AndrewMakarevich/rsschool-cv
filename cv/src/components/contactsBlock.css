@@ -1,0 +1,41 @@
+.block__contacts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    position: relative;
+    height: auto;
+    width: 100%;
+    transition: .3s;
+    transition: margin .3s;
+    /* transition: opacity .3s; */
+    overflow: auto;
+    padding: 0;
+    padding-top: 65px;
+    margin:0;
+    z-index: 0;
+}
+.block__contacts__contact{
+    position: relative;
+    padding: 20px;
+    border-left: solid rgb(92, 144, 148) 2px;  
+    overflow: hidden;
+    transition:background-color .3s;
+}
+.block__contacts__contact h3{
+    font-size: 25px;
+}
+.block__contacts__contact h3:hover ~ .contact__span{
+    left:0;
+}
+.contact__link{
+    color: white;
+    text-decoration: none;
+}
+.contact__span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-100%;
+    top:0;
+    z-index:-1;
+    transition: left .3s;
+}

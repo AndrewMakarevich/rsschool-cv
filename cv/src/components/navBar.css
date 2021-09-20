@@ -1,0 +1,127 @@
+.navBar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 10px 0;
+    width:100%;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: background-color .3s;
+    z-index:2;
+}
+.navBar__burgerIcon{
+    position: relative;
+    display: none;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.navBar__buttonsBlock{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color:inherit;
+    transition: background-color .3s;
+    transition: left .3s;
+    /* z-index: 2; */
+}
+.navBar__buttonsBlock button{
+    position: relative;
+    background-color: transparent;
+    border:none;
+    font-size: 30px;
+    margin: 0 10px;
+    border-bottom: solid white 1px;
+    transition: background-color .3s;
+    overflow: hidden;
+    z-index: 2;
+}
+.navBar__buttonsBlock button:hover span{
+    top: 0;
+}
+.navBar__buttonsBlock button a{
+    text-decoration: none;
+    color: white;
+    font-family: Gilroy;
+}
+.navBar__buttonsBlock button span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(197, 177, 171);
+    left:0;
+    top: 100%;
+    transition: top .3s;
+    z-index: -1;
+}
+.navBar__burgerIcon .burgerIcon__firstLine,
+.navBar__burgerIcon .burgerIcon__secondLine,
+.navBar__burgerIcon .burgerIcon__thirdLine{
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    pointer-events: none;
+    transition: .3s;
+}
+.burgerIcon__firstLine{
+    top:0;
+}
+.burgerIcon__secondLine{
+    top:45%;
+}
+.burgerIcon__thirdLine{
+    top:90%;
+}
+/* Burger Animation Classes */
+.rotate{
+    top:45%;
+    transform: rotate(45deg);
+}
+.invisible{
+    opacity: 0;
+}
+.reverseRotate{
+    top:45%;
+    transform: rotate(-45deg);
+}
+/*  */
+@media (max-width: 768px) {
+    .navBar{
+        justify-content: flex-start;
+    }
+    .navBar__burgerIcon{
+        display: block;
+    }
+    .navBar__buttonsBlock{
+        position: absolute;
+        width: auto;
+        left: -110%;
+        top: 70px;
+        flex-direction: column;
+        padding: 10px;
+        box-shadow: 4px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    }
+    .navBar__buttonsBlock button{
+        padding: 10px 0;
+        transition: background-color .3s;
+    }
+    .navBar__buttonsBlock button:active{
+        background-color:thistle;
+    }
+}
+.openMobileBar{
+    left: 0;
+}
+.hardSkillsBarStyle{
+    background-color:rgb(157, 221, 221);
+  }
+  .softSkillsBarStyle{
+    background-color:rgb(243, 200, 176);
+  }
