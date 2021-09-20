@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="libs/highlight/styles/github-dark.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<nav class="navBar">
+			<section class="navBar__buttonsBlock">
+				<button>
+					<a href="#skills">skills</a>
+					<span></span>
+				</button>
+				<button>
+					<a href="#About me">about me</a>
+					<span></span>
+				</button>
+				<button>
+					<a href="#code">code</a>
+					<span></span>
+				</button>
+			</section>
+		</nav>
+
+		<section class="header-section">
+			<article class="header-section__name headersSections"> 
+         		 Andrew Makarevich
+        	</article>
+        	<div class="headersSections">
+          		<img class="header-section__photo" src='icons/avatar.jpg' alt=""/>
+        	</div>
+		</section >
+			
+		<section class="contacts">
+			<ul class="block__contacts">
+				<li class="block__contacts__contact">
+					<h3>
+						<a class="contact__link" href="https://www.linkedin.com/in/andrei-makarevich-342b0020a/">LinkedIn</a>
+					</h3>
+					<span class="contact__span"></span>
+				</li>
+				<li class="block__contacts__contact">
+					<h3>
+						<a class="contact__link" href="mailto:andreimakarevich2001@gmail.com">Gmail</a>
+					</h3>
+					<span class="contact__span"></span>
+				</li>
+				<li class="block__contacts__contact">
+					<h3>
+						<a class="contact__link" href="https://vk.com/id190521646">VK</a>
+					</h3>
+					<span class="contact__span"></span>
+				</li>
+				<li class="block__contacts__contact">
+					<h3>
+						<a class="contact__link" href="https://github.com/AndrewMakarevich">GitHub</a>
+					</h3>
+					<span class="contact__span"></span>
+				</li>
+			</ul>
+		</section>
+
+		<section class="skills-section">
+			<h2 class="skills-section__header">
+				<a name="skills"></a>skills
+          		<span className="header__firstLine"></span>
+        	</h2>
+        	<div class="block_skillList">
+        		<section class="skillList__hardSkills">
+        			<h3 class="hardSkills__header">Hard</h3>
+        			<ul class="section__hardSkills skillsList">
+        				<li class="skillItem">HTML</li>
+        				<li class="skillItem">CSS</li>
+        				<li class="skillItem">JavaScript</li>
+        				<li class="skillItem">ReactJs</li>
+        				<li class="skillItem">NodeJs( Express,Sequilize)</li>
+        				<li class="skillItem">PostgreSQL</li>
+        				<li class="skillItem">Git</li>
+        			</ul>
+        		</section>
+        		<section class="skillList__softSkills">
+        			<h3 class="softSkills__header">Soft</h3>
+        			<ul class="section__softSkills skillsList">
+        				<li class="skillItem">sociable</li>
+        				<li class="skillItem">hardworking</li>
+        				<li class="skillItem">friendly</li>
+        				<li class="skillItem">enthusiastic</li>
+        			</ul>
+        		</section>
+        	</div>
+		</section>
+
+	</header>
+	<main>
+		<div class="info-section">
+			<section class="info-section__about">
+				<h2 class="info-section__header">
+					ABOUT
+				</h2>
+				<article class="info-section__block">
+					<a name="Education"></a>
+					<h3 class="info-section__block__header">Education</h3>
+					<div class="info-section__block__info">2018 - 2022: Yanka Kupala State University of Grodno<br/> Speciality: Information resources management</div>
+				</article>
+				<article class="info-section__block">
+					<a name="About me"></a>
+					<h3 class="info-section__block__header">About me</h3>
+					<div class="info-section__block__info">Hi, my name is Andrew, I’m a student, which sincerely wants to become a professional programmer in the sphere of making web applications. I really like to solve different kinds of uncommon tasks in JavaScript, HTML, and CSS. I assume that, as I love organizing design by the combination of colors, positions of elements, and fonts, and have been learning C# at the beginning of my student’s life, the position of a trainee front-end developer will be the best start for me, but in perspective, I would like to become a full-stack developer.</div>
+				</article>
+			</section>
+			<section class="info-section__experience">
+				<h2 class="info-section__header">
+					EXPERIENCE
+				</h2>
+				<article class="info-section__block">
+					<a name="Summer practise"></a>
+					<h3 class="info-section__block__header">Summer practise</h3>
+				<div class="info-section__block__info">06.28.2021 - 07.18.2021<br/>
+					Throughout three weeks, as a part of summer practice, I practiced as a front-end developer in EPAM Systems, solving different tasks, learning Docker, Git, UnifiedUI, and in last days, as a final task, I did a static web page on ReactJs.
+				</div>
+				</article>
+				<article class="info-section__block">
+					<a name="English course"></a>
+					<h3 class="info-section__block__header">English course</h3>
+					<div class="info-section__block__info">Mr.English language course, B1.<br/>
+						English level: B1
+					</div>
+				</article>
+
+			</section>
+		</div>
+		<div class="codeExample">
+			<h2 class="codeExample-header">
+				<a name="code"></a>
+				Code examples
+			</h2>
+			<section class="codeExample-list">
+				<article class="codeExample-list__item">
+					<h2 class="codeExample-list__item__header">Code wars | Run-length encoding (6 kyu)</h2>
+					<div class="codeExample-list__item__description">Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatening all those strings. Your run-length encoding should be minimal, ie. for all i the values si and si+1 should differ.</div>
+					<pre class="codeExample-list__item__example">
+						<code>var runLengthEncoding = function(str){				
+        const lettersArray = str.split('');
+        let finalArray = [];
+        let sameLettersArray = [];
+        lettersArray.reduce((prevV, curV, index)=>{
+            if(prevV === curV){
+                sameLettersArray.push(curV);
+            }else{
+                finalArray.push(sameLettersArray);
+                sameLettersArray = [];
+                sameLettersArray.push(curV); 
+            }
+            if(index === str.length-1){
+                finalArray.push(sameLettersArray);
+            }
+            return curV;
+        }, lettersArray[0]);
+        return finalArray.map(array=>{
+            return array = [array.length, array[0]];
+            });          
+        }
+						</code>
+					</pre>
+				</article>
+
+				<article class="codeExample-list__item">
+					<h2 class="codeExample-list__item__header">Code wars | Function Cache (5 kyu)</h2>
+					<div class="codeExample-list__item__description">If you are calculating complex things or execute time-consuming API calls, you sometimes want to cache the results. In this case we want you to create a function wrapper, which takes a function and caches its results depending on the arguments, that were applied to the function.</div>
+					<pre class="codeExample-list__item__example">
+						<code>
+ function cache(func) {
+  let cache = {}; //Кэш функции
+
+  return function (){
+    let argumentsArray = []; // Аргументы для реализаци функции
+    let argumentsKey = []; // Аргументы для создания и поиска уникального ключа
+    
+    for(arg of arguments){
+      if(typeof(arg)==='object'){
+        argumentsArray = [...argumentsArray, arg];
+        argumentsKey = [...argumentsKey, JSON.stringify(arg)];
+      }else{
+        argumentsArray = [...argumentsArray, arg];
+        argumentsKey = [...argumentsKey, arg];
+      }
+      
+    }
+    const key = `${argumentsKey}`;
+    if(key in cache){
+      return cache[key];
+    }else{
+      cache[key] = func(...argumentsArray);
+      return cache[key];
+    }
+  }
+}
+               			</code>
+					</pre>
+				</article>
+			</section>
+		</div>
+		
+	</main>
+	<footer class="footer">
+		<article class="footer__gitHubLink">
+			<a href="https://github.com/AndrewMakarevich"><img class="footer__gitHubLink__logo" src="icons/gitHub.svg" alt=""/></a>
+		</article>
+		<article class="footer__author">
+			<div>MADE BY</div>
+			<div>Andrew Makarevich</div>
+			<div>2021</div>		
+		</article>
+		<article class="footer__courseInfo">
+			<a href="https://rs.school/js/"><img class="footer__courseInfo__logo" src="icons/rs.svg" alt=""/></a>
+		</article>
+	</footer>
+
+	<script src="libs/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+</html>
