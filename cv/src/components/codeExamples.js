@@ -9,8 +9,8 @@ import './codeExample.css';
 const CodeExamples = () => {
     const { code } = useContext(Context);
     return (
-        <section className="codeExample">
-            <h2 className="codeExample-header">Code examples</h2>
+        <section className="codeExample" >
+            <h2 id="Code examples" className="codeExample-header">Code examples</h2>
             <section className="codeExample-list">
                 {
                     code.codeInfo.map(code => {

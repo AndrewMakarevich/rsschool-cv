@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import { Context } from '../index';
 import { burgerMenuScript } from './burgerMenuScript.js';
+import { backlightAnchor } from './anchorBacklightScript';
 import './navBar.css';
 
 const NavBar = ({ page }) => {
@@ -25,6 +26,20 @@ const NavBar = ({ page }) => {
                         )
                     })
                 }
+                {
+                    cv.expAndEd.map(ed => {
+                        return (
+                            <button className="navBar__buttonsBlock__button" key={ed.id}>
+                                <a href={`#${ed.title}`}>{ed.title}</a>
+                                <span></span>
+                            </button>
+                        )
+                    })
+                }
+                <button className="navBar__buttonsBlock__button">
+                    <a href="#Code examples">Code examples</a>
+                    <span></span>
+                </button>
             </section>
 
 

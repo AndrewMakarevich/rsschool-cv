@@ -25,7 +25,22 @@ export class CvStore {
                 'link': 'https://github.com/AndrewMakarevich'
             }
         ];
+        this._infoHeader = {
+            header: "Info about me"
+        };
         this._aboutMe = [
+            {
+                'id': '0',
+                'title': "About me",
+                'text': 'Hi, my name is Andrew, I’m a student, which sincerely wants to become a professional programmer in the sphere of making web applications. I really like to solve different kinds of uncommon tasks in JavaScript, HTML, and CSS. I assume that, as I love organizing design by the combination of colors, positions of elements, and fonts, and have been learning C# at the beginning of my student’s life, the position of a trainee front-end developer will be the best start for me, but in perspective, I would like to become a full-stack developer.'
+            },
+            {
+                'id': '1',
+                'title': "My self-education",
+                'text': 'I have been starting learning JS more than a five-month ago, for now, I have a basic knowledge of how can I use it in web development with ReactJs and, a little bit, mostly with a help of guides, in NodeJs with Express, Sequilize libraries and PostgreSQL Server'
+            }
+        ];
+        this._experienceAndEducation = [
             {
                 'id': '0',
                 'title': "Education",
@@ -33,16 +48,15 @@ export class CvStore {
             },
             {
                 'id': '1',
-                'title': "One more",
-                'text': loremIpsum
+                'title': "Experience",
+                'text': '06.28.2021 - 07.18.2021\n Throughout three weeks, as a part of summer practice, I practiced as a front-end developer in EPAM Systems, solving different tasks, learning Docker, Git, UnifiedUI, and in last days, as a final task, I did a static web page on ReactJs.'
             },
             {
                 'id': '2',
-                'title': "Also one more",
-                'text': loremIpsum
+                'title': "English level",
+                'text': 'Finished Mr.English language course, B1, in 2020.\n English level: B1'
             }
         ];
-        this._education = [];
         this._softSkills = [
             { 'skill': 'sociable' },
             { 'skill': 'hardworking' },
@@ -62,11 +76,14 @@ export class CvStore {
     setContacts(contacts) {
         this._contacts = contacts;
     }
+    setInfoHeader(header) {
+        this._infoHeader = header;
+    }
     setAboutMe(aboutMe) {
         this._aboutMe = aboutMe;
     }
-    setEducation(education) {
-        this._education = education;
+    setExpAndEd(education) {
+        this._experienceAndEducation = education;
     }
     setSoftSkills(softSkill) {
         this._softSkills = softSkill;
@@ -78,11 +95,14 @@ export class CvStore {
     get contacts() {
         return this._contacts;
     }
+    get infoHeader() {
+        return this._infoHeader;
+    }
     get aboutMe() {
         return this._aboutMe;
     }
-    get education() {
-        return this._education;
+    get expAndEd() {
+        return this._experienceAndEducation;
     }
     get softSkills() {
         return this._softSkills;

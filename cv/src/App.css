@@ -13,6 +13,10 @@
   margin: 0 auto;
   width: 90%;
 }
+.header{
+  width: 100%;
+  z-index:2;
+}
 .header-section{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -26,7 +30,6 @@
   padding-bottom: 100px;
   z-index: 1;
 }
-
 .header-section__photo{
   position: absolute;
   z-index: 2;
@@ -53,7 +56,23 @@
 .headersSections{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
+@media (max-width: 425px) {
+  .header-section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .header-section__photo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
 
 .skills-section{
   display: flex;
@@ -115,7 +134,24 @@
   background-color:rgba(221, 116, 55, 0.4); 
 }
 
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
 .info-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(197, 177, 171);
+}
+.info-section__header{
+  font-family: Gilroy;
+  text-align: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+.info-section__content{
   display: grid;
   position: relative;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -123,19 +159,6 @@
   width: 100%;
   background-color: rgb(197, 177, 171);
   white-space: pre-line;
-}
-.info-section__about
-{
-  background-color:transparent;
-}
-.info-section__experience{
-  background-color:transparent;
-}
-.info-section__header{
-  font-family: Gilroy;
-  text-align: center;
-  position: relative;
-  color: rgb(255, 255, 255);
 }
 .info-section__block{
   display: flex;
@@ -171,4 +194,8 @@
      overflow: hidden;
     /* margin: auto;   */
   }
+}
+
+.yakor:focus{
+  color: white;
 }
